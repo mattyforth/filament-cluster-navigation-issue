@@ -72,7 +72,6 @@ class CaseResource extends Resource
     {
         return [
             'index' => CaseResource\Pages\ListCases::route('/'),
-            'pending' => ListPendingCases::route('/pending'),
             'edit' => CaseResource\Pages\EditCase::route('/{record}/edit'),
             'view' => CaseResource\Pages\ViewCase::route('/{record}'),
         ];
